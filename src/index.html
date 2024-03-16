@@ -10,16 +10,16 @@
   </head>
   <body>
     <header
-      class="flex justify-between border border-red-500 bg-white w-full fixed top-0">
-      <div>
-        <a href="#">Sylvie</a>
+      class="flex justify-between  bg-white w-full fixed top-0">
+      <div class="text-gray-500 hover:text-slate-300">
+        <a href="index.html">Sylvie</a>
       </div>
       <div>
-        <ul class="flex gap-8">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Portifio</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="flex gap-8  text-gray-500">
+          <li><a href="#about" class="hover:text-slate-300">About</a></li>
+          <li><a href="#skills" class="hover:text-slate-300">Service</a></li>
+          <li><a href="#project" class="hover:text-slate-300">Portifio</a></li>
+          <li><a href="#contact" class="hover:text-slate-300">Contact</a></li>
         </ul>
       </div>
     </header>
@@ -27,10 +27,20 @@
       <div
         class="bg-cover bg-center h-screen w-full border border-red-200"
         style="background-image: url('cup.jpg')" >
-        <h2 class="pt-72 flex items-center justify-center">
-          HELLO I'M FORNT END DEVELOPER
-        </h2>
-        <p class="flex items-center justify-center">
+        <h2 class="pt-72 flex items-center justify-center font-bold">HELLO I'M FORNT END DEVELOPER</h2>
+        <div class="flex items-center justify-center p-4">
+          <hr class="w-10 flex items-center justify-center border-t-2 border-orange-500">
+        </div>
+        <p class="flex items-center justify-center p-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          officia<br>
+          hic sapiente eius a numquam error, dicta provident aperiam aliquam
+          harum<br>
+          animi rerum reiciendis culpa accusantium consequuntur dignissimos
+          alias<br>
+          dolorem?<br>
+        </p>
+        <p class="flex items-center justify-center p-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           officia<br>
           hic sapiente eius a numquam error, dicta provident aperiam aliquam
@@ -41,32 +51,44 @@
         </p>
       <div class=" flex items-center justify-center flex-col gap-7">
         <button class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">
-          <a href="#">FIND OUT MORE</a>
+          <a href="#about">FIND OUT MORE</a>
         </button>
       </div>
       </div>
-      <div class="border border-blue-300 bg-orange-600  text-white">
+      <div class="border border-blue-300 bg-orange-600  text-white p-4 " id="about">
         <h2 class="flex items-center justify-center">ABOUT ME</h2>
-        <hr class="w-10 flex items-center justify-center">
-        <p class="flex items-center justify-center">
+        <div class="flex items-center justify-center p-4">
+          <hr class="w-10 flex items-center justify-center">
+        </div>
+        <p class="flex items-center justify-center p-4">
           I'm called Masengesho sylvie, I m front-end developer.<br>
           In high school I studed software development after studing in
           highschool,<br />
           I attended she can code program,and it will take 4 months.And I wish
           to be software engener <br />
         </p>
-        <div class=" flex items-center justify-center text-white flex-col gap-7">
-          <button class=" bg-white text-black font-bold py-2 px-4 rounded-full ">
-            <a href="#">GET STARTED!</a>
+        <p class="flex items-center justify-center p-4">
+          I'm called Masengesho sylvie, I m front-end developer.<br>
+          In high school I studed software development after studing in
+          highschool,<br />
+          I attended she can code program,and it will take 4 months.And I wish
+          to be software engener <br />
+        </p>
+        <div class=" flex items-center justify-center text-white flex-col gap-7 p-5">
+          <button class=" bg-white text-black font-bold py-2 px-4 rounded-full p-4 ">
+            <a href="#skills">GET STARTED!</a>
           </button>
         </div>
       </div>
 
-      <div class="border border-b-yellow-300 ">
-        <h2 class="flex items-center justify-center">AT YOUR SERVICE AND SKILLS</h2>
-        <hr class="w-10 border-t-2 border-orange-500 flex-col" />
-        <i class="bx bxl-tailwind-css flex items-center justify-center text-2xl"></i>
-        <p class="flex items-center justify-center">
+      <div id="skills">
+        <h2 class="flex items-center justify-center p-4">AT YOUR SERVICE AND SKILLS</h2>
+        <div class="flex items-center justify-center p-4">
+          <hr class="w-10 border-t-2 border-orange-500 flex-col">
+        </div>
+        
+        <i class="bx bxl-tailwind-css flex items-center justify-center text-2xl p-4"></i>
+        <p class="flex items-center justify-center p-4">
           Tailwind CSS is a highly customizable, utility-first CSS framework<br />
           that streamlines the process of building responsive and modern web<br />
           designs. Unlike traditional CSS frameworks like Bootstrap or<br />
@@ -81,8 +103,8 @@
           Developers can compose these utility classes together to create<br />
           complex layouts and designs without having to write custom CSS.<br />
         </p>
-        <i class="bx bxl-javascript flex items-center justify-center text-2xl"></i>
-        <p class="flex items-center justify-center">
+        <i class="bx bxl-javascript flex items-center justify-center text-2xl p-4"></i>
+        <p class="flex items-center justify-center p-4">
           JavaScript is a high-level programming language primarily used for<br />
           creating dynamic and interactive web content. Originally developed
           by<br />
@@ -92,8 +114,8 @@
           be used on the server-side (with environments like Node.js) and in<br />
           various other contexts.<br />
         </p>
-        <i class="bx bxl-php flex items-center justify-center text-2xl"></i>
-        <p class="flex items-center justify-center">
+        <i class="bx bxl-php flex items-center justify-center text-2xl p-4"></i>
+        <p class="flex items-center justify-center p-4">
           PHP:hypertext preprocessor. php is server-side scriping language that<br>
           widely used for web development. It is an open source language and<br>
           commonly embedded into html to create dynamic web page. php is<br>
@@ -101,32 +123,35 @@
           other database),html,css,javascript,and framework like laravel and<br>
           symfony to build robust and dynamic web application.<br>
         </p>
-        <i class="bx bxl-html5 flex items-center justify-center text-2xl"></i>
-        <p class="flex items-center justify-center">
+        <i class="bx bxl-html5 flex items-center justify-center text-2xl p-4"></i>
+        <p class="flex items-center justify-center p-4">
           HTML:hypertext markup language. learn language that developer use to<br>
           build webpage. html is structure of web page html is the standard<br>
           markup language used to create and design web page.<br>
         </p>
       </div>
-      <div>
-        <h2 class=" flex items-center justify-center">PROJECT</h2>
+      <div id="project">
+        <h2 class=" flex items-center justify-center p-4">PROJECT</h2>
         <img src="architect.jpg" alter="architect project" class="w-full">
         <img src="m.PNG" alter="protofio project" class="">
         <img src="steak.jpg" alter="food project" class="">
         </div>
-        <div class="border border-red-950 bg-black flex items-center justify-center text-white flex-col gap-7">
+        <div class="border border-red-950 bg-black flex items-center justify-center text-white flex-col gap-7 p-4">
           <h2>Free Dounload My CV</h2>
-          <button class=" bg-white font-bold py-2 px-4 rounded-full text-black"><a href="#">DOWNLOAD NOW!</a></button>
+          <button class=" bg-white font-bold py-2 px-4 rounded-full text-black hover:bg-slate-200"><a href="Slyvie's cv.docx">DOWNLOAD NOW!</a></button>
         </div>
-        <div class="border border-red-900 ">
-          <h2 class=" flex items-center justify-center ">CONTACT</h2>
-          <hr>
+        <div class="border border-red-900 p-4" id="contact">
+          <h2 class=" flex items-center justify-center p-4">CONTACT</h2>
+          <div class="flex items-center justify-center p-4">
+            <hr class="w-10 border-t-2 border-orange-500">
+          </div>
+          
           <form class="flex items-center justify-center flex-col gap-10 ">
-            <input type="text" name="lname" placeholder="FirstName" class= "border border-gray-300 rounded-md p-2 w-9/12 text-black">
+            <input type="text" name="lname" placeholder="FirstName" class= "border border-gray-300 rounded-md p-2 w-9/12 ">
             <input type="email" name="email" placeholder="Email Address" class= "border border-gray-300 rounded-md p-2 w-9/12">
             <input type="tel" name="number" placeholder="Phone Number" class= "border border-gray-300 rounded-md p-2 w-9/12">
             <textarea id="message" name="message" rows="4"placeholder="Message" class="border border-gray-300 rounded-md p-2 w-9/12" ></textarea>
-            <button type="submit" class="border border-gray-300 rounded-md p-2 w-9/12 bg-orange-400">Submit</button>
+            <button type="submit" class="border border-gray-300 rounded-md p-2 w-9/12 bg-orange-400 hover:bg-orange-300 text-white">Submit</button>
           </form>
         </div>
     </section>
