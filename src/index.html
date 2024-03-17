@@ -4,25 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>personal portifio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
   </head>
   <body>
-    <header
-      class="flex justify-between  bg-white w-full fixed top-0">
-      <div class="text-gray-500 hover:text-slate-300">
-        <a href="index.html">Sylvie</a>
+    <nav class="bg-white  ">
+      <div class="container mx-auto flex justify-between items-center  bg-white w-full top-0 fixed ">
+        <div class="text-gray-400 text-2xl font-bold hover:text-gray-300"><a href="index.html">sylvie</a></div>
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-gray-300">About</a>
+          <a href="#" class="text-gray-400 hover:text-gray-300">Skills</a>
+          <a href="#" class="text-gray-400 hover:text-gray-300">Portifio</a>
+          <a href="#" class="text-gray-400 hover:text-gray-300">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button id="burgerBtn" class="text-gray-400 focus:outline-none hover:text-gray-300">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
-      <div>
-        <ul class="flex gap-8  text-gray-500">
-          <li><a href="#about" class="hover:text-slate-300">About</a></li>
-          <li><a href="#skills" class="hover:text-slate-300">Service</a></li>
-          <li><a href="#project" class="hover:text-slate-300">Portifio</a></li>
-          <li><a href="#contact" class="hover:text-slate-300">Contact</a></li>
-        </ul>
+    </nav>
+    
+    <div id="mobileMenu" class="md:hidden hidden bg-white py-8">
+      <div class="container mx-auto flex flex-col space-y-4">
+        <a href="#" class="text-gray-400 hover:bg-red-400 text-transparent">Home</a>
+        <a href="#" class="text-gray-400 hover:bg-red-400">About</a>
+        <a href="#" class="text-gray-400 hover:bg-red-400">Services</a>
+        <a href="#" class="text-gray-400 hover:bg-red-400">Contact</a>
       </div>
-    </header>
+    </div>
     <section class="flex-col justify-center items-center gap-16">
       <div
         class="bg-cover bg-center h-screen w-full border border-red-200"
@@ -48,15 +61,18 @@
           animi rerum reiciendis culpa accusantium consequuntur dignissimos
           alias<br>
           dolorem?<br>
+         
         </p>
-      <div class=" flex items-center justify-center flex-col gap-7">
-        <button class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">
-          <a href="#about">FIND OUT MORE</a>
-        </button>
+        <div class=" flex items-center justify-center flex-col ">
+          <button class="bg-blue-300 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">
+            <a href="#about">FIND OUT MORE</a>
+          </button>
+        </div>
+     
       </div>
-      </div>
-      <div class="border border-blue-300 bg-orange-600  text-white p-4 " id="about">
-        <h2 class="flex items-center justify-center font-bold">ABOUT ME</h2>
+      <div id="about">
+      <div class="border border-blue-300 bg-orange-600  text-white p-11 " id="about">
+        <h2 class="flex items-center justify-center font-bold p-4">ABOUT ME</h2>
         <div class="flex items-center justify-center p-4">
           <hr class="w-10 flex items-center justify-center">
         </div>
@@ -80,6 +96,7 @@
           </button>
         </div>
       </div>
+    </div>
 
       <div id="skills">
         <h2 class="flex items-center justify-center p-4 font-bold">AT YOUR SERVICE AND SKILLS</h2>
@@ -133,8 +150,12 @@
       <div id="project">
         <h2 class=" flex items-center justify-center p-4 font-bold">PROJECT</h2>
         <img src="architect.jpg" alter="architect project" class="w-full">
-        <img src="m.PNG" alter="protofio project" class="">
-        <img src="steak.jpg" alter="food project" class="">
+        <div class="flex justify-center items-center ">
+          <img src="m.PNG" alter="protofio project">
+        </div>
+        <div class="flex justify-center items-center">
+        <img src="steak.jpg" alter="food project">
+      </div>
         </div>
         <div class="border border-red-950 bg-black flex items-center justify-center text-white flex-col gap-7 p-4">
           <h2>Free Dounload My CV</h2>
@@ -155,5 +176,6 @@
           </form>
         </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

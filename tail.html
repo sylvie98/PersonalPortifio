@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Tailwind CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<nav class="bg-gray-800 py-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-white text-2xl font-bold">Logo</div>
+    <div class="hidden md:flex space-x-4">
+      <a href="#" class="text-white">Home</a>
+      <a href="#" class="text-white">About</a>
+      <a href="#" class="text-white">Services</a>
+      <a href="#" class="text-white">Contact</a>
+    </div>
+    <div class="md:hidden">
+      <button id="burgerBtn" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="md:hidden hidden bg-gray-800 py-4">
+  <div class="container mx-auto flex flex-col space-y-4">
+    <a href="#" class="text-white">Home</a>
+    <a href="#" class="text-white">About</a>
+    <a href="#" class="text-white">Services</a>
+    <a href="#" class="text-white">Contact</a>
+  </div>
+</div>
+
+<script>
+  const burgerBtn = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  burgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
+<header
+class="flex justify-between  bg-white w-full fixed top-0">
+<div class="text-gray-500 hover:text-slate-300">
+  <a href="index.html">Sylvie</a>
+</div>
+<div>
+  <ul class="flex gap-8  text-gray-500">
+    <li><a href="#about" class="hover:text-slate-300">About</a></li>
+    <li><a href="#skills" class="hover:text-slate-300">Service</a></li>
+    <li><a href="#project" class="hover:text-slate-300">Portifio</a></li>
+    <li><a href="#contact" class="hover:text-slate-300">Contact</a></li>
+  </ul>
+</div>
+</header>
