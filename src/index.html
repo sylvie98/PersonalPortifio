@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>personal portifio</title>
+    <title>Personal Portifio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous">
     <link
@@ -12,8 +12,8 @@
   </head>
   <body>
     <nav class="bg-white">
-      <div class="flex justify-between items-center  bg-white w-full top-0 p-5 fixed">
-        <div class="text-gray-400 text-2xl font-bold hover:text-gray-300"><a href="index.html">sylvie</a></div>
+      <div class="flex justify-between items-center  bg-white w-full top-0 p-5 fixed font-serif">
+        <div class="text-gray-400 text-2xl font-bold hover:text-gray-300 font-serif"><a href="index.html">sylvie</a></div>
         <div class="hidden md:flex space-x-4">
           <a href="#about" class="text-gray-400 hover:text-gray-200">About</a>
           <a href="#skills" class="text-gray-400 hover:text-gray-300">Skills</a>
@@ -28,23 +28,24 @@
       </div>
     </nav>
     
-    <div id="mobileMenu" class="md:hidden hidden bg-white w-full py-8">
-      <div class="container mx-auto flex flex-col space-y-4">
-        <a href="#about" class="text-gray-400 hover:bg-red-400 text-transparent">Home</a>
-        <a href="#skills" class="text-gray-400 hover:bg-red-400">About</a>
-        <a href="#project" class="text-gray-400 hover:bg-red-400">Services</a>
-        <a href="#contact" class="text-gray-400 hover:bg-red-400">Contact</a>
+    <div id="mobileMenu" class="md:hidden hidden  w-full py-16 ">
+      <div class="container mx-auto flex flex-col space-y-4 font-serif bg-white   fixed ">
+        <!--<a href="index.html" class="text-black hover:text-red-400">Home</a>-->
+        <a href="#about" class="text-black hover:text-red-400">About</a>
+        <a href="#skills" class="text-black hover:text-red-400">Services</a>
+        <a href="#project" class="text-black hover:text-red-400 ">Portifio</a>
+        <a href="#contact" class="text-black hover:text-red-400">Contact</a>
       </div>
     </div>
     <section class="flex-col justify-center items-center gap-16">
       <div
         class="bg-cover bg-center h-screen w-full border border-red-200"
         style="background-image: url('cup.jpg')" >
-        <h2 class="pt-72 flex items-center justify-center font-bold">HELLO I'M FORNT END DEVELOPER</h2>
+        <h2 class="pt-72 flex items-center justify-center font-bold font-serif">HELLO I'M FORNT END DEVELOPER</h2>
         <div class="flex items-center justify-center p-4">
           <hr class="w-10 flex items-center justify-center border-t-2 border-orange-500">
         </div>
-        <p class="flex items-center justify-center p-4">
+        <p class="flex items-center justify-center p-4 font-serif">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           officia<br>
           hic sapiente eius a numquam error, dicta provident aperiam aliquam
@@ -53,44 +54,34 @@
           alias<br>
           dolorem?<br>
         </p>
-        <p class="flex items-center justify-center p-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          officia<br>
-          hic sapiente eius a numquam error, dicta provident aperiam aliquam
-          harum<br>
-          animi rerum reiciendis culpa accusantium consequuntur dignissimos
-          alias<br>
-          dolorem?<br>
-         
-        </p>
-        <div class=" flex items-center justify-center flex-col ">
-          <button class="bg-blue-300 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">
+        <div class=" flex items-center justify-center flex-col font-serif">
+          <button class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full">
             <a href="#about">FIND OUT MORE</a>
           </button>
         </div>
      
       </div>
       <div id="about">
-      <div class="border border-blue-300 bg-orange-600  text-white p-11 " id="about">
+      <div class="border border-blue-300 bg-orange-600  text-white p-11 font-serif">
         <h2 class="flex items-center justify-center font-bold p-4">ABOUT ME</h2>
         <div class="flex items-center justify-center p-4">
           <hr class="w-10 flex items-center justify-center">
         </div>
-        <p class="flex items-center justify-center p-4">
+        <p class="flex items-center justify-center p-4 font-serif">
           I'm called Masengesho sylvie, I m front-end developer.<br>
           In high school I studed software development after studing in
           highschool,<br />
           I attended she can code program,and it will take 4 months.And I wish
           to be software engener <br />
         </p>
-        <p class="flex items-center justify-center p-4">
+        <p class="flex items-center justify-center p-4 font-serif">
           I'm called Masengesho sylvie, I m front-end developer.<br>
           In high school I studed software development after studing in
           highschool,<br />
           I attended she can code program,and it will take 4 months.And I wish
           to be software engener <br />
         </p>
-        <div class=" flex items-center justify-center text-white flex-col gap-7 p-5">
+        <div class=" flex items-center justify-center text-white flex-col gap-7 p-5 font-serif">
           <button class=" bg-white text-black font-bold py-2 px-4 rounded-full p-4 ">
             <a href="#skills">GET STARTED!</a>
           </button>
@@ -99,13 +90,12 @@
     </div>
 
       <div id="skills">
-        <h2 class="flex items-center justify-center p-4 font-bold">AT YOUR SERVICE AND SKILLS</h2>
+        <h2 class="flex items-center justify-center p-4 font-bold font-serif">AT YOUR SERVICE AND SKILLS</h2>
         <div class="flex items-center justify-center p-4">
           <hr class="w-10 border-t-2 border-orange-500 flex-col">
         </div>
-        
         <i class="bx bxl-tailwind-css flex items-center justify-center text-2xl p-4"></i>
-        <p class="flex items-center justify-center p-4">
+        <p class="flex items-center justify-center p-4 font-serif">
           Tailwind CSS is a highly customizable, utility-first CSS framework<br />
           that streamlines the process of building responsive and modern web<br />
           designs. Unlike traditional CSS frameworks like Bootstrap or<br />
@@ -121,7 +111,7 @@
           complex layouts and designs without having to write custom CSS.<br />
         </p>
         <i class="bx bxl-javascript flex items-center justify-center text-2xl p-4"></i>
-        <p class="flex items-center justify-center p-4">
+        <p class="flex items-center justify-center p-4 font-serif">
           JavaScript is a high-level programming language primarily used for<br />
           creating dynamic and interactive web content. Originally developed
           by<br />
@@ -132,7 +122,7 @@
           various other contexts.<br />
         </p>
         <i class="bx bxl-php flex items-center justify-center text-2xl p-4"></i>
-        <p class="flex items-center justify-center p-4">
+        <p class="flex items-center justify-center p-4 font-serif">
           PHP:hypertext preprocessor. php is server-side scriping language that<br>
           widely used for web development. It is an open source language and<br>
           commonly embedded into html to create dynamic web page. php is<br>
@@ -141,39 +131,55 @@
           symfony to build robust and dynamic web application.<br>
         </p>
         <i class="bx bxl-html5 flex items-center justify-center text-2xl p-4"></i>
-        <p class="flex items-center justify-center p-4">
+        <p class="flex items-center justify-center p-4 font-serif">
           HTML:hypertext markup language. learn language that developer use to<br>
           build webpage. html is structure of web page html is the standard<br>
           markup language used to create and design web page.<br>
         </p>
       </div>
       <div id="project">
-        <h2 class=" flex items-center justify-center p-4 font-bold">PROJECT</h2>
-        <img src="architect.jpg" alter="architect project">
-        <div class="flex justify-center items-center">
-          <img src="m.PNG" alter= "protofio project">
+        <h2 class=" flex items-center justify-center p-4 font-bold font-serif">PROJECT</h2>
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
+              <img src="steak.jpg"  alt="Photo 1">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
+              <img src="house5.jpg"  alt="Photo 2">
+          </div>
+          
+          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
+              <img src="steak.jpg"  alt="Photo 4">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
+            <img src="m.PNG"  alt="Photo 3">
         </div>
-        <div class="flex justify-center items-center">
-        <img src="steak.jpg" alter="food project">
+      </div>
       </div>
         </div>
-        <div class="border border-red-950 bg-black flex items-center justify-center text-white flex-col gap-7 p-4">
+        <div class="border border-red-950 bg-black flex items-center justify-center text-white flex-col gap-7 p-4 font-serif">
           <h2>Free Dounload My CV</h2>
           <button class=" bg-white font-bold py-2 px-4 rounded-full text-black hover:bg-slate-200"><a href="Slyvie's cv.docx">DOWNLOAD NOW!</a></button>
         </div>
         <div class="border border-red-900 p-4" id="contact">
-          <h2 class=" flex items-center justify-center p-4 font-bold">CONTACT</h2>
+          <h2 class=" flex items-center justify-center p-4 font-bold font-serif">CONTACT</h2>
           <div class="flex items-center justify-center p-4">
             <hr class="w-10 border-t-2 border-orange-500">
           </div>
           
           <form class="flex items-center justify-center flex-col gap-10 ">
-            <input type="text" name="lname" placeholder="FirstName" class= "border border-gray-300 rounded-md p-2 w-9/12 ">
-            <input type="email" name="email" placeholder="Email Address" class= "border border-gray-300 rounded-md p-2 w-9/12">
-            <input type="tel" name="number" placeholder="Phone Number" class= "border border-gray-300 rounded-md p-2 w-9/12">
-            <textarea id="message" name="message" rows="4"placeholder="Message" class="border border-gray-300 rounded-md p-2 w-9/12" ></textarea>
-            <button type="submit" class="border border-gray-300 rounded-md p-2 w-9/12 bg-orange-400 hover:bg-orange-300 text-white">Submit</button>
+            <input type="text" name="lname" placeholder="Full name" class= "border border-gray-300 rounded-md p-3 w-9/12 font-serif">
+            <input type="email" name="email" placeholder="Email Address" class= "border border-gray-300 rounded-md p-3 w-9/12 font-serif">
+            <input type="tel" name="number" placeholder="Phone Number" class= "border border-gray-300 rounded-md p-3 w-9/12 font-serif">
+            <textarea id="Message" name="message" rows="4"placeholder="Message" class="border border-gray-300 rounded-md p-5 w-9/12 font-serif"></textarea>
+            <button type="submit" class="border border-gray-300 font-bold py-2 px-4 rounded-full p-5 w-9/12 bg-orange-400 hover:bg-orange-300 text-white font-serif">SUBMIT</button>
           </form>
+        </div>
+        <div class="flex justify-center items-center text-3xl p-10 border border-red-50 bg-white flex-col">
+          <i class='bx bx-mobile'></i>
+            <p>(+250) 793896810<p>
+        </div>
+        <div class="flex justify-center items-center border border-red-50 bg-gray-100 p-6 font-serif">
+            <P>Copyright &copy; 2024 - Company Name distributed by <a href="https://github.com/sylvie98" class="text-red-400">GitHub</a></P>
         </div>
     </section>
     <script src="index.js"></script>
