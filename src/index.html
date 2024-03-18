@@ -13,12 +13,12 @@
   <body>
     <nav class="bg-white">
       <div class="flex justify-between items-center  bg-white w-full top-0 p-5 fixed font-serif">
-        <div class="text-gray-400 text-2xl font-bold hover:text-gray-300 font-serif"><a href="index.html">sylvie</a></div>
+        <div class="text-black text-2xl font-bold hover:text-red-500 font-serif"><a href="index.html">sylvie</a></div>
         <div class="hidden md:flex space-x-4">
-          <a href="#about" class="text-gray-400 hover:text-gray-200">About</a>
-          <a href="#skills" class="text-gray-400 hover:text-gray-300">Skills</a>
-          <a href="#project" class="text-gray-400 hover:text-gray-300">Portifio</a>
-          <a href="#contact" class="text-gray-400 hover:text-gray-300">Contact</a>
+          <a href="#about" class="text-black hover:text-red-500">About</a>
+          <a href="#skills" class="text-black hover:text-red-500">Skills</a>
+          <a href="#project" class="text-black hover:text-red-500">Portifio</a>
+          <a href="#contact" class="text-black hover:text-red-500">Contact</a>
         </div>
         <div class="md:hidden">
           <button id="burgerBtn" class="text-gray-400 focus:outline-none hover:text-gray-300">
@@ -94,7 +94,9 @@
         <div class="flex items-center justify-center p-4">
           <hr class="w-10 border-t-2 border-orange-500 flex-col">
         </div>
-        <i class="bx bxl-tailwind-css flex items-center justify-center text-2xl p-4"></i>
+        <div class="p-5 w-full flex flex-wrap gap-5 justify-center bg-gray-50">
+        <div>
+          <i class="bx bxl-tailwind-css flex items-center justify-center text-2xl p-4"></i>
         <p class="flex items-center justify-center p-4 font-serif">
           Tailwind CSS is a highly customizable, utility-first CSS framework<br />
           that streamlines the process of building responsive and modern web<br />
@@ -110,7 +112,9 @@
           Developers can compose these utility classes together to create<br />
           complex layouts and designs without having to write custom CSS.<br />
         </p>
-        <i class="bx bxl-javascript flex items-center justify-center text-2xl p-4"></i>
+        </div>
+        <div>
+          <i class="bx bxl-javascript flex items-center justify-center text-2xl p-4"></i>
         <p class="flex items-center justify-center p-4 font-serif">
           JavaScript is a high-level programming language primarily used for<br />
           creating dynamic and interactive web content. Originally developed
@@ -121,15 +125,20 @@
           be used on the server-side (with environments like Node.js) and in<br />
           various other contexts.<br />
         </p>
-        <i class="bx bxl-php flex items-center justify-center text-2xl p-4"></i>
-        <p class="flex items-center justify-center p-4 font-serif">
-          PHP:hypertext preprocessor. php is server-side scriping language that<br>
-          widely used for web development. It is an open source language and<br>
-          commonly embedded into html to create dynamic web page. php is<br>
-          commonly used in conjunction with other techonologies like mysql(or<br>
-          other database),html,css,javascript,and framework like laravel and<br>
-          symfony to build robust and dynamic web application.<br>
-        </p>
+        </div>
+        <div>
+          <i class="bx bxl-php flex items-center justify-center text-2xl p-4"></i>
+          <p class="flex items-center justify-center p-4 font-serif">
+            PHP:hypertext preprocessor. php is server-side scriping language that<br>
+            widely used for web development. It is an open source language and<br>
+            commonly embedded into html to create dynamic web page. php is<br>
+            commonly used in conjunction with other techonologies like mysql(or<br>
+            other database),html,css,javascript,and framework like laravel and<br>
+            symfony to build robust and dynamic web application.<br>
+          </p>
+        </div>
+      
+       <div>
         <i class="bx bxl-html5 flex items-center justify-center text-2xl p-4"></i>
         <p class="flex items-center justify-center p-4 font-serif">
           HTML:hypertext markup language. learn language that developer use to<br>
@@ -137,25 +146,68 @@
           markup language used to create and design web page.<br>
         </p>
       </div>
+    </div>
+      </div>
       <div id="project">
         <h2 class=" flex items-center justify-center p-4 font-bold font-serif">PROJECT</h2>
-        <div class="flex flex-wrap justify-center">
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
-              <img src="steak.jpg"  alt="Photo 1">
+        <div class=" w-full flex flex-wrap  justify-center bg-black">
+          <div class="h-fit group">
+            <div class="relative overflow-hidden">
+              <img src="steak.jpg"  alt="food" class="h-80 w-96">
+              <div class="absolute h-full  w-full bg-orange-600 flex items-center justify-center bottom-10 group-hover: opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h2 class="text-gray-200   font-serif">Category</h2>
+                <button class=" text-white py-2 px-5 font-serif">Project Name</button>
+              </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
-              <img src="house5.jpg"  alt="Photo 2">
-          </div>
-          
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
-              <img src="steak.jpg"  alt="Photo 4">
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2">
-            <img src="m.PNG"  alt="Photo 3">
+        </div>
+        <div class="h-fit group">
+          <div class="relative overflow-hidden">
+            <img src="architect.jpg"  alt="food" class="h-80 w-96">
+            <div class="absolute h-full  w-full bg-orange-600 flex items-center justify-center bottom-10 group-hover: opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <h2 class="text-gray-200   font-serif">Category</h2>
+              <button class=" text-white py-2 px-5 font-serif">Project Name</button>
+            </div>
         </div>
       </div>
-      </div>
+          <div class="h-fit group">
+            <div class="relative overflow-hidden">
+              <img src="image.PNG"  alt="food" class="h-80 w-96">
+              <div class="absolute h-full  w-full bg-orange-600 flex items-center justify-center bottom-10 group-hover: opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h2 class="text-gray-200   font-serif">Category</h2>
+                <button class=" text-white py-2 px-5 font-serif">Project Name</button>
+              </div>
+          </div>
         </div>
+        <div class="h-fit group">
+          <div class="relative overflow-hidden">
+            <img src="house5.jpg"  alt="food" class="h-80 w-96">
+            <div class="absolute h-full  w-full bg-orange-600 flex items-center justify-center bottom-10 group-hover: opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <h2 class="text-gray-200   font-serif">Category</h2>
+              <button class=" text-white py-2 px-5 font-serif">Project Name</button>
+            </div>
+        </div>
+      </div>
+      <div class="h-fit group">
+        <div class="relative overflow-hidden">
+          <img src="emojis.PNG"  alt="food" class="h-80 w-96">
+          <div class="absolute h-full  w-full bg-orange-600 flex items-center justify-center bottom-10 group-hover: opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <h2 class="text-gray-200   font-serif">Category</h2>
+            <button class=" text-white py-2 px-5 font-serif">Project Name</button>
+          </div>
+      </div>
+    </div>
+    <div class="h-fit group">
+      <div class="relative overflow-hidden">
+        <img src="m.PNG"  alt="food" class="h-80 w-96">
+        <div class="absolute h-full  w-full bg-orange-600 flex items-center justify-center bottom-10 group-hover: opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <h2 class="text-gray-200   font-serif">Category</h2>
+          <button class=" text-white py-2 px-5">Project Name</button>
+        </div>
+    </div>
+  </div>
+    <div>
+       </div>
+      </div>
         <div class="border border-red-950 bg-black flex items-center justify-center text-white flex-col gap-7 p-4 font-serif">
           <h2>Free Dounload My CV</h2>
           <button class=" bg-white font-bold py-2 px-4 rounded-full text-black hover:bg-slate-200"><a href="Slyvie's cv.docx">DOWNLOAD NOW!</a></button>
